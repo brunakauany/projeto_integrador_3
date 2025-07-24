@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Painel - CãoTinho</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; }
+        .container { max-width: 800px; margin: auto; }
+        .logout-btn { color: red; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo(a) de volta, {{ cliente.nome }}!</h1>
+        <p>Este é o seu painel de cliente.</p>
+        
+        <hr>
+        
+        <h3>Suas Informações:</h3>
+        <ul>
+            <li><strong>E-mail:</strong> {{ cliente.email }}</li>
+            <li><strong>Telefone:</strong> {{ cliente.telefone }}</li>
+            <li><strong>Endereço:</strong> {{ cliente.endereco }}</li>
+        </ul>
+
+        <br>
+        <p><a href="{% url 'logout' %}" class="logout-btn">Sair (Logout)</a></p>
+    </div>
+</body>
+</html>
