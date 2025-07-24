@@ -6,22 +6,21 @@ from animal.models import Pet # Importa modelo Pet para filtros/exibição
 # Registra o modelo Agendamento no Django Admin
 @admin.register(Agendamento)
 class AgendamentoAdmin(admin.ModelAdmin):
-    # Define os campos que serão exibidos na lista de agendamentos no painel de administração
+    
     list_display = ('data_hora', 'pet', 'cliente', 'funcionario', 'status', 'admin')
-    # Define os campos pelos quais será possível pesquisar
+    
     search_fields = (
-        'pet__nome',        # Busca pelo nome do pet
-        'cliente__nome',    # Busca pelo nome do cliente
-        'funcionario__nome', # Busca pelo nome do funcionário
+        'pet__nome',        
+        'cliente__nome',    
+        'funcionario__nome', 
         'status',
         'observacoes'
     )
     # Adiciona filtros laterais para facilitar a navegação
     list_filter = ('status', 'data_hora', 'funcionario', 'cliente', 'pet')
-    # Adiciona um campo de autocompletar para as chaves estrangeiras
-    # Isso é útil para quando há muitos registros e evita o carregamento de todos eles
+    
     raw_id_fields = ('pet', 'funcionario', 'cliente', 'admin')
-    # Define a ordem padrão dos resultados
-    ordering = ('-data_hora',) # Ordena do mais recente para o mais antigo
+    
+    ordering = ('-data_hora',) 
 
-# Register your models here.
+

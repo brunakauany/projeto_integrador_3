@@ -12,21 +12,20 @@ class Produto(models.Model):
     preco = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Preço Unitário")
     quantidade_estoque = models.IntegerField(verbose_name="Quantidade em Estoque")
 
-    # Chave estrangeira para o modelo Administrador no app 'contas'
-    # Indica qual administrador cadastrou/gerencia este produto
+    
     admin = models.ForeignKey(
         Administrador,
-        on_delete=models.SET_NULL, # Se o administrador for deletado, o campo admin_id será NULO
-        related_name='produtos_gerenciados', # Nome para acessar os produtos a partir de um administrador
+        on_delete=models.SET_NULL, 
+        related_name='produtos_gerenciados', 
         verbose_name="Administrador Responsável",
-        null=True, # Permite que o campo seja NULO no banco de dados
-        blank=True # Permite que o campo seja opcional no formulário
+        null=True,
+        blank=True
     )
 
     class Meta:
         verbose_name = "Produto"
         verbose_name_plural = "Produtos"
-        ordering = ['nome'] # Ordena os produtos pelo nome por padrão
+        ordering = ['nome'] 
 
     def __str__(self):
         return self.nome
@@ -42,15 +41,14 @@ class Servico(models.Model):
     preco = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Preço do Serviço")
     duracao_estimada = models.DurationField(verbose_name="Duração Estimada") # Campo para duração (ex: 1h30m)
 
-    # Chave estrangeira para o modelo Administrador no app 'contas'
-    # Indica qual administrador cadastrou/gerencia este serviço
+    
     admin = models.ForeignKey(
         Administrador,
-        on_delete=models.SET_NULL, # Se o administrador for deletado, o campo admin_id será NULO
-        related_name='servicos_gerenciados', # Nome para acessar os serviços a partir de um administrador
+        on_delete=models.SET_NULL, 
+        related_name='servicos_gerenciados', 
         verbose_name="Administrador Responsável",
-        null=True, # Permite que o campo seja NULO no banco de dados
-        blank=True # Permite que o campo seja opcional no formulário
+        null=True, 
+        blank=True 
     )
 
     class Meta:
@@ -60,5 +58,3 @@ class Servico(models.Model):
 
     def __str__(self):
         return self.nome
-
-# Create your models here.

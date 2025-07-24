@@ -1,0 +1,1336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe6b8;
+  width: 100%;
+  height: 95px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  padding-top: 100px;
+}
+
+html {
+  scroll-padding-top: 95px;
+  font-size: 100%;
+}
+
+.logo img {
+  max-height: 80px;
+  margin: 25px 0px 20px 100px;
+}
+
+.botoes-menu {
+  display: flex;
+  margin-right: 100px;
+  color: #fff;
+  
+}
+.botoes-nav-menu a {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.botoes-nav-menu button {
+  background-color: transparent;
+  padding: 8px 8px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+  border: 1px solid #e3ded5;
+  background: #fea901;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+}
+
+.botoes-nav-menu button:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.carousel-img {
+  width: 70%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(224, 224, 224);
+  /* Cor desejada */
+  border-radius: 40%;
+}
+
+/*----------QUEM SOMOS----------------*/
+
+.quem-somos {
+  background-color: #D9D9D9;
+  padding: 40px;
+  text-align: center;
+}
+
+.titulo-quemsomos {
+  padding-bottom: 15px;
+  color: #3F3D56;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-shadow: 2px 2px 4px rgba(63, 61, 86, 0.4);
+}
+
+.quem-somos .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quem-somos p {
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-left: 80px;
+  padding: 10px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quem-somos img {
+
+  border-radius: 15px;
+  margin-left: 130px;
+  width: 100%;
+  /* Deixa a imagem ocupar toda a largura disponível */
+  height: auto;
+  /* Mantém a proporção da imagem */
+  max-width: 400px;
+  /* Limita a largura máxima da imagem para evitar que fique muito grande */
+  margin-bottom: 20px;
+  /* Adiciona um pequeno espaçamento superior entre o texto e a imagem */
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.2);}
+
+/*-----FINAL QUEM SOMOS--------------------------*/
+
+/*--------------- NOSSOS SERVIÇOS------------------ */
+
+.forma1 {
+  width: 100%;
+  height: 150px;
+  margin-top: -30px;
+  background-color: #ffffff00;
+}
+
+.forma1 {
+  overflow: hidden;
+  position: relative;
+}
+
+.forma1::before {
+  content: '';
+  font-family: 'shape divider from ShapeDividers.com';
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 100% 131px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0.1 35.28 2.17" preserveAspectRatio="none"><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" fill="%23fea901"/></svg>');
+}
+
+@media (min-width: 2100px) {
+  .forma1::before {
+    background-size: 100% calc(2vw + 131px);
+  }
+}
+
+.forma2 {
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff00;
+}
+
+.forma2 {
+  overflow: hidden;
+  position: relative;
+}
+
+.forma2::before {
+  content: '';
+  font-family: 'shape divider from ShapeDividers.com';
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 100% 131px;
+  background-position: 50% 100%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.1 35.28 2.17" preserveAspectRatio="none"><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" fill="%23fea901"/></svg>');
+}
+
+@media (min-width: 2100px) {
+  .forma2::before {
+    background-size: 100% calc(2vw + 131px);
+  }
+}
+
+.titulo-nossos-servicos {
+  padding-bottom: 30px;
+  text-align: center;
+  color: #3F3D56;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: -60px;
+  text-shadow: 2px 2px 4px rgba(63, 61, 86, 0.4);
+}
+
+.nossos-servicos {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+}
+
+.card-servicos:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.card-servicos:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.card-servicos:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.card-servicos:nth-child(4) {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.card-servicos {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card-servicos:hover {
+  transform: scale(1.05);
+}
+
+.card-servicos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s;
+}
+
+.card-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: justify;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding: 30px;
+}
+
+.card-servicos:hover .card-text {
+  opacity: 1;
+}
+
+.card-servicos:hover img {
+  opacity: 0.3;
+}
+
+/*-----FIM NOSSOS SERVIÇOS---------------------*/
+
+
+
+/*--Pagina de produtos---------------------------------------------------------------------------------------------------------------*/
+
+.forma-produtos::before {
+  content: '';
+  font-family: 'shape divider from ShapeDividers.com';
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 100% 131px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0.1 35.28 2.17" preserveAspectRatio="none"><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" fill="%23fea901"/></svg>');
+}
+
+.forma-produtos {
+  width: 100%;
+  height: 150px;
+  margin-top: -5px;
+  background-color: #ffffff00;
+  overflow: hidden;
+  position: relative;
+}
+
+.titulo-produtos {
+  padding-top: -110px;
+}
+
+.produtos-container h3 {
+  text-align: center;
+  color: #3f3d56;
+  margin-bottom: 20px;
+  margin-top: -50px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(63, 61, 86, 0.4);
+}
+
+.products-section {
+  font-family: "Roboto Slab", sans-serif;
+  max-width: 1100px !important;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border: #a8a8a8 solid 1px;
+  border-radius: 20px;
+  perspective: 1000px;
+}
+
+#carouselExampleDark{
+  width: 30rem;
+  height: 20rem;
+  flex: 1; 
+  max-width: 45%; 
+  
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px; 
+  
+}
+.carousel-produtos{
+
+  border-radius: 20px;
+
+}
+
+
+
+/* Estiliza a barra de pesquisa */
+.search-bar {
+  text-align: center;
+  margin: 20px 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 10px 50px 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #d3d3d3;
+  font-size: 16px;
+  background: url('img/icons/lupa.png') no-repeat right 15px center, linear-gradient(to right, #d3d3d3 95%, #000 96%);
+  background-size: 20px 20px, 1px 80%;
+  background-position: right 30px center, right 50px center;
+}
+
+.search-bar input::placeholder {
+  color: #666;
+  font-size: 16px;
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  margin: 10px;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  position: relative;
+  border-radius: 35px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 35px;
+}
+
+.card-front {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-back {
+  background-color: #9dbba7;
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 150px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.whatsapp-button {
+  background-color: #25d366;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebc53;
+}
+
+.whatsapp-button img {
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+@media (min-width: 2100px) {
+  .forma-produtos::before {
+    background-size: 100% calc(2vw + 131px);
+  }
+}
+
+/*--CONHEÇA A NOSSA VARIEDADE DE PRODUTOS-----------------------------------------------------------------------------------*/
+
+.nossos-produtos {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 900px;
+  background-color: #D9D9D9;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  
+}
+
+.nossos-produtos h3 {
+  margin-top: 25px;
+  color: #3F3D56;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-shadow: 2px 2px 4px rgba(63, 61, 86, 0.4);
+}
+
+.produtos-section {
+  width: 1300px;
+  height: 700px; /*800*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  
+}
+
+.container-variedade-produtos {
+  display: flex;
+  width: 1200px;
+  height: 700px;
+  
+}
+
+.circulos-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 700px;  
+  margin-left: -10px;
+  
+  
+}
+
+.img-dog {
+  width: 230px;
+  height: 550px;
+  border-radius: 150px;
+  background-color: #F5B75A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-left: 20px;
+  
+}
+
+#caozinho {
+  width: 400px;
+  height: 350px;
+}
+
+.circulos {
+  display: flex;
+  margin: 0px 50px 0px 50px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: #fea901;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circulos:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#circulo1,
+#circulo4,
+#circulo7 {
+  background-color: #F5B75A;
+}
+
+#circulo2,
+#circulo5,
+#circulo8 {
+  background-color: #E48A98;
+}
+
+#circulo3,
+#circulo6,
+#circulo9 {
+  background-color: #B0BEFF;
+}
+
+.circulos img {
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+}
+
+#circulo1 img {
+  width: 110px;
+  height: auto;
+}
+
+#circulo2 img {
+  width: 110px;
+  height: auto;
+}
+
+#circulo3 img {
+  width: 110px;
+  height: auto;
+}
+
+#circulo5 img {
+  width: 105px;
+  height: auto;
+}
+
+#circulo6 img {
+  width: 150px;
+  height: auto;
+}
+
+#circulo7 p {
+  margin-top: -10px;
+  
+}
+
+#circulo8 img {
+  width: 150px;
+  height: auto;
+}
+
+#circulo9 img {
+  width: 110px;
+  height: auto;
+}
+
+.circulos p {
+  width: 150px;
+  height: auto;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(22, 22, 22, 0.651);
+  font-family: "Roboto Slab";
+  font-size: 18px;
+  font-weight: 500;
+  
+  
+}
+
+/*--FIM DO "CONHEÇA A NOSSA VARIEDADE DE PRODUTOS"-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*--RODAPÉ---------------------------------------------------------------------------------------------------------------*/
+
+.rodape {
+  width: 100%;
+  height: 400px;
+  background-color: #968970;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.informacoes {
+  width: 600px;
+  height: 400px;
+  margin: 0px 0px 0px 90px;
+}
+
+.imagens {
+  display: flex;
+  width: 600px;
+  height: 150px;
+}
+
+#fig-gato {
+  width: 140px;
+  padding: 40px 0px 0px 0px;
+}
+
+#fig-cachorro {
+  width: 250px;
+  padding: 30px 0px 0px 20px;
+  margin-left: 100px;
+}
+
+.container-informacoes {
+  margin: 5px 0px 0px 40px;
+  width: 440px;
+  height: 50px;
+  display: flex;
+}
+
+.icons-informacoes {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.texto-informacoes {
+  color: #fff;
+  font-family: "Roboto" sans-serif;
+  width: auto;
+  height: auto;
+  font-weight: 500;
+  font-size: 14px;
+  
+}
+
+#texto-telefone,
+#texto-instagram {
+  margin: 15px 0px 0px 0px;
+}
+
+#texto-endereco,
+#texto-funcionamento {
+  margin: 10px 0px 0px 0px;
+}
+
+.maps {
+  width: 500px;
+  height: 350px;
+  margin: 25px 20px 0px 150px;
+  background-color: aliceblue;
+}
+
+
+
+/*--RESPONSIVE----------------------------------------------------------------------------------*/
+
+@media (max-width: 1280px) {
+  .menu-superior {
+    width: 100%;
+  }
+
+  .logo img {
+    margin-left: 50px;
+  }
+
+  .botoes-menu {
+    margin-right: 50px;
+  }
+
+  .card-servicos {
+    width: 280px;
+    height: 280px;
+  }
+
+  .card-text {
+    font-size: 13px;
+    padding: 20px;
+  }
+
+  .nossos-produtos {
+    width: 100%;
+  }
+
+  .maps {
+    width: 450px;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .informacoes {
+    margin-left: 50px;
+  }
+
+  .container-variedade-produtos {
+    width: 90%;
+  }
+
+  .circulos-produtos {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .img-dog {
+    margin-top: 5vh;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu-superior {
+    width: 100%;
+  }
+
+  .botoes-nav-menu button {
+    font-size: 12px;
+    padding: 6px 6px;
+  }
+
+  .card-servicos {
+    width: 250px;
+    height: 250px;
+  }
+
+  .card-text {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .nossos-produtos {
+    width: 100%;
+  }
+
+  .maps {
+    width: 400px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+
+  .informacoes {
+    margin-left: 30px;
+  }
+
+  .circulos {
+    width: 170px;
+    height: 170px;
+    margin: 0px 30px;
+  }
+
+  .circulos img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circulos p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-superior {
+    height: 80px;
+  }
+
+  .logo img {
+    max-height: 70px;
+    margin-left: 30px;
+  }
+
+  .botoes-menu {
+    margin-right: 30px;
+  }
+
+  .botoes-nav-menu button {
+    font-size: 10px;
+    padding: 5px 5px;
+  }
+
+  .quem-somos p {
+    margin-left: 30px;
+    width: auto;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .quem-somos img {
+    margin-left: 0;
+    max-width: 300px;
+  }
+
+  .card-servicos {
+    width: 220px;
+    height: 220px;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .card-text {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .nossos-produtos {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .produtos-section {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container-variedade-produtos {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .circulos-produtos {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .circulos {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .circulos img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circulos p {
+    font-size: 14px;
+  }
+
+  .img-dog {
+    width: 200px;
+    height: 400px;
+    margin-top: 30px;
+  }
+
+  #caozinho {
+    width: 250px;
+    height: 200px;
+  }
+
+  .rodape {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .informacoes {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+
+  .imagens {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #fig-gato {
+    padding: 0;
+    margin: 0 10px;
+  }
+
+  #fig-cachorro {
+    padding: 0;
+    margin: 0 10px;
+  }
+
+  .container-informacoes {
+    width: 100%;
+    margin: 10px auto;
+    justify-content: center;
+  }
+
+  .maps {
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-superior {
+    height: 70px;
+  }
+
+  .logo img {
+    max-height: 60px;
+    margin-left: 20px;
+  }
+
+  .botoes-menu {
+    margin-right: 20px;
+  }
+
+  .botoes-nav-menu button {
+    font-size: 8px;
+    padding: 4px 4px;
+  }
+
+  .quem-somos p {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .quem-somos img {
+    max-width: 250px;
+  }
+
+  .card-servicos {
+    width: 180px;
+    height: 180px;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .card-text {
+    font-size: 8px;
+    padding: 8px;
+  }
+
+  .titulo-nossos-servicos {
+    font-size: 25px;
+    margin-top: -40px;
+  }
+
+  .circulos {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circulos img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circulos p {
+    font-size: 12px;
+  }
+
+  .img-dog {
+    width: 180px;
+    height: 350px;
+  }
+
+  #caozinho {
+    width: 200px;
+    height: 180px;
+  }
+
+  .texto-informacoes {
+    font-size: 12px;
+  }
+
+  #fig-gato {
+    width: 120px;
+  }
+
+  #fig-cachorro {
+    width: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  /* Extra small devices (portrait phones, less than 576px) */
+  .menu-superior {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .logo img {
+    margin: 10px auto;
+    max-height: 50px;
+  }
+
+  .botoes-menu {
+    margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botoes-nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botoes-nav-menu a {
+    margin: 5px 0;
+  }
+
+  body {
+    padding-top: 0;
+  }
+
+  html {
+    scroll-padding-top: 0;
+  }
+
+  .carousel-img {
+    width: 95%;
+  }
+
+  .quem-somos {
+    padding: 20px;
+  }
+
+  .titulo-quemsomos {
+    font-size: 25px;
+  }
+
+  .quem-somos .row {
+    flex-direction: column;
+  }
+
+  .quem-somos p {
+    margin-left: 0;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .quem-somos img {
+    margin-left: 0;
+    max-width: 90%;
+    margin-top: 20px;
+  }
+
+  .titulo-nossos-servicos {
+    font-size: 22px;
+    margin-top: -30px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-servicos {
+    width: 90%;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .card-servicos:nth-child(1),
+  .card-servicos:nth-child(2),
+  .card-servicos:nth-child(3),
+  .card-servicos:nth-child(4) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .card-text {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .nossos-produtos h3 {
+    font-size: 25px;
+  }
+
+  .products-section {
+    padding: 10px;
+  }
+
+  .circulos-produtos {
+    flex-direction: row;
+  }
+
+  .circulos {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+  }
+
+  .circulos img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .circulos p {
+    font-size: 10px;
+  }
+
+  .img-dog {
+    width: 150px;
+    height: 300px;
+  }
+
+  #caozinho {
+    width: 180px;
+    height: 150px;
+  }
+
+  .rodape {
+    padding: 10px;
+  }
+
+  .informacoes {
+    width: 100%;
+    margin: 0;
+  }
+
+  .maps {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Smaller mobile devices */
+  .logo img {
+    max-height: 40px;
+  }
+
+  .botoes-nav-menu button {
+    font-size: 7px;
+    padding: 3px 3px;
+  }
+
+  .carousel-img {
+    width: 100%;
+  }
+
+  .quem-somos p {
+    font-size: 13px;
+  }
+
+  .titulo-nossos-servicos {
+    font-size: 20px;
+  }
+
+  .card-servicos {
+    height: 200px;
+  }
+
+  .card-text {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .nossos-produtos h3 {
+    font-size: 20px;
+  }
+
+  .circulos {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+  }
+
+  .circulos img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .circulos p {
+    font-size: 9px;
+  }
+
+  .img-dog {
+    width: 120px;
+    height: 250px;
+  }
+
+  #caozinho {
+    width: 150px;
+    height: 120px;
+  }
+
+  .texto-informacoes {
+    font-size: 11px;
+  }
+
+  #fig-gato {
+    width: 100px;
+  }
+
+  #fig-cachorro {
+    width: 150px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  /* Even smaller mobile devices */
+  .botoes-nav-menu button {
+    font-size: 6px;
+    padding: 2px 2px;
+  }
+
+  .quem-somos p {
+    font-size: 12px;
+  }
+
+  .card-text {
+    font-size: 9px;
+    padding: 8px;
+  }
+
+  .circulos {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circulos img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circulos p {
+    font-size: 8px;
+  }
+}
+
+
+

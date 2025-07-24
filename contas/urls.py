@@ -1,15 +1,18 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import ClienteViewSet, FuncionarioViewSet, AdministradorViewSet
+from . import views
 
-# Cria um router para registrar os ViewSets
 router = DefaultRouter()
-router.register(r'clientes', ClienteViewSet)
-router.register(r'funcionarios', FuncionarioViewSet)
-router.register(r'administradores', AdministradorViewSet)
+router.register(r'clientes', views.ClienteViewSet)
+
+
+app_name = 'contas'
 
 urlpatterns = [
-    # Inclui as URLs geradas pelo router para os ViewSets
-    path('', include(router.urls)),
-]
+    
+    path('api/', include(router.urls)),
 
+    
+    path('cadastro_cliente/', views.cadastrar_cliente, name='cadastro_cliente'),
+    path('sucesso/', views.pagina_de_sucesso, name='pagina_de_sucesso'),
+]

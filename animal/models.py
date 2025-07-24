@@ -1,5 +1,5 @@
 from django.db import models
-from contas.models import Cliente # Importa o modelo Cliente do app 'contas'
+from contas.models import Cliente 
 
 class Pet(models.Model):
     """
@@ -16,20 +16,19 @@ class Pet(models.Model):
     castracao = models.BooleanField(default=False, verbose_name="Castrado(a)?")
     observacoes = models.TextField(verbose_name="Observações Adicionais", blank=True, null=True)
 
-    # Chave estrangeira para o modelo Cliente no app 'contas'
+    
     cliente = models.ForeignKey(
         Cliente,
-        on_delete=models.CASCADE, # Se o cliente for deletado, os pets também serão
-        related_name='pets',      # Nome para acessar os pets a partir de um cliente (ex: cliente.pets.all())
+        on_delete=models.CASCADE, 
+        related_name='pets',     
         verbose_name="Dono do Pet"
     )
 
     class Meta:
         verbose_name = "Pet"
         verbose_name_plural = "Pets"
-        ordering = ['nome'] # Ordena os pets pelo nome por padrão
+        ordering = ['nome'] 
 
     def __str__(self):
         return f"{self.nome} ({self.tipo} de {self.cliente.nome})"
 
-# Create your models here.

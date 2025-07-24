@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sucesso!</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            text-align: center; 
+            padding-top: 50px; 
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: inline-block;
+            margin: 20px;
+        }
+        h1 { 
+            color: #0f6f37ff; 
+            font-weight: 600;
+        }
+        p {
+            color: #555;
+            font-size: 1.1em;
+        }
+        .btn-login {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #f39c12;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .btn-login:hover {
+            background-color: #e67e22;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro realizado com sucesso!</h1>
+        <p>Agora você já pode fazer o login com seu e-mail e senha.</p>
+        
+        <a href="{% url 'login' %}" class="btn-login">Ir para a página de Login</a>
+    </div>
+</body>
+</html>
